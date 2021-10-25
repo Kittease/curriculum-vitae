@@ -1,0 +1,159 @@
+:root {
+    --left-bar-size: 250px;
+}
+
+@media print {
+    body {
+        width: 21cm;
+        height: 29.7cm;
+   } 
+}
+
+* { margin: 0; }
+
+html {
+    background-color: black;
+}
+
+body {
+    width: 21cm;
+    height: 29.7cm;
+    margin-left: calc(50% - 21cm / 2);
+    background-color: #FFF;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+} 
+
+#top-bar {
+    width: 100%;
+    height: var(--left-bar-size);
+    color: white;
+    background-color: #154158;
+
+    display: grid;
+    grid-template-columns: var(--left-bar-size) auto;
+    column-gap: 20px;
+
+    position: relative;
+    -webkit-box-shadow: 0px 5px 10px 5px rgba(0, 0 , 0, 0.75);
+    -moz-box-shadow: 0px 5px 10px 5px rgba(0, 0 , 0, 0.75);
+    box-shadow: 0px 5px 10px 5px rgba(0, 0 , 0, 0.75);
+}
+
+#photo {
+    padding: 15%;
+}
+
+#photo img {
+    width: 100%;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+}
+
+#infos {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: center;
+    row-gap: 40px;
+}
+
+#personal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.personal-col {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: center;
+    row-gap: 10px;
+}
+
+#content {
+    height: calc(100% - var(--left-bar-size));
+    display: grid;
+    grid-template-columns: var(--left-bar-size) auto;
+}
+
+#left-bar {
+    padding: 30px 20px 20px 20px;
+    color: white;
+    background-color: #165572;
+}
+
+.left-bar-el-1:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.left-bar-el-1 h1 {
+    border-bottom: 1px solid #FFF;
+}
+
+.left-bar-el-2:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.left-bar-el-2 h2 {
+    margin-bottom: 10px;
+}
+
+.element h3 {
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+.element p {
+    font-size: 14px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.element p, .element span {
+    color: #AFCAD3;
+}
+
+.element a {
+    color: #009FE3;
+}
+
+#main {
+    padding: 30px 20px 20px 20px;
+}
+
+#main h1 {
+    border-bottom: 1px solid #000;
+}
+
+
+
+p:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+.picto {
+    display: grid;
+    grid-template-columns: 1.2em auto;
+    column-gap: 0.6em;
+    align-content: end;
+}
+
+.picto img {
+    display: inline-block;
+    height: 1.2em;
+}
