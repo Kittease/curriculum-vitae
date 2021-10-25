@@ -80,38 +80,38 @@ body {
     background-color: #165572;
 }
 
-.left-bar-el-1:not(:last-child) {
+.left-bar-block-1:not(:last-child) {
     margin-bottom: 50px;
 }
 
-.left-bar-el-1 h1 {
+.left-bar-block-1 h1 {
     border-bottom: 1px solid #FFF;
 }
 
-.left-bar-el-2:not(:last-child) {
+.left-bar-block-2:not(:last-child) {
     margin-bottom: 25px;
 }
 
-.left-bar-el-2 h2 {
+.left-bar-block-2 h2 {
     margin-bottom: 10px;
 }
 
-.element h3 {
+.left-bar-element h3 {
     margin-left: 10px;
     margin-bottom: 3px;
 }
 
-.element p {
+.left-bar-element p {
     font-size: 14px;
     margin-left: 20px;
     margin-bottom: 5px;
 }
 
-.element p, .element span {
+.left-bar-element p, .left-bar-element span {
     color: #AFCAD3;
 }
 
-.element a {
+.left-bar-element a {
     color: #009FE3;
 }
 
