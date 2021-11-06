@@ -39,6 +39,15 @@ body {
     box-shadow: 0px 5px 10px 5px rgba(0, 0 , 0, 0.75);
 }
 
+#top-bar p:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+#top-bar a {
+    color: #FFF;
+    text-decoration: none;
+}
+
 #photo {
     padding: 15%;
 }
@@ -53,7 +62,7 @@ body {
     display: grid;
     grid-template-rows: auto auto;
     align-content: center;
-    row-gap: 40px;
+    row-gap: 30px;
 }
 
 #personal {
@@ -80,8 +89,8 @@ body {
     background-color: #165572;
 }
 
-.left-bar-block-1:not(:last-child) {
-    margin-bottom: 50px;
+.left-bar-block-1:first-child {
+    margin-bottom: 30px;
 }
 
 .left-bar-block-1 h1 {
@@ -89,7 +98,7 @@ body {
 }
 
 .left-bar-block-2:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .left-bar-block-2 h2 {
@@ -115,6 +124,18 @@ body {
     color: #009FE3;
 }
 
+#left-bar-social-networks {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+#left-bar-social-networks img {
+    width: 25px;
+}
+
 #main {
     padding: 30px 20px 20px 20px;
 }
@@ -123,11 +144,103 @@ body {
     border-bottom: 1px solid #000;
 }
 
-
-
-p:not(:last-child) {
-    margin-bottom: 5px;
+.main-block-1 {
+    margin-bottom: 20px;
 }
+
+#skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.skill h3 {
+    margin-left: 5px;
+}
+
+.skill-bar {
+    height: 6px;
+    border: 1px solid #000;
+    padding: 1px;
+}
+
+.skill-bar-progress {
+    height: 100%;
+    width: var(--progress);
+    background: #6199B2;
+}
+
+#skills-other {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    justify-items: center;
+}
+
+.experience {
+    padding: 0 10px;
+    display: grid;
+    grid-template-areas: "title  date"
+                         "desc   desc";
+    align-items: center;
+    row-gap: 5px;
+    margin-bottom: 10px;
+}
+
+.experience h2 {
+    grid-area: title;
+}
+
+.experience-date {
+    grid-area: date;
+    justify-self: right;
+
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: right;
+}
+
+.experience-date h3 {
+    color: #165572;
+}
+
+.experience-date h3:first-child {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.experience-date h3:last-child {
+    font-size: 10px;
+}
+
+.experience-description {
+    grid-area: desc;
+}
+
+.experience-description p {
+    color: #000;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#projects {
+    padding-left: 20px;
+}
+
+#projects li {
+    font-size: 14px;
+}
+
+#projects li span {
+    color: #165572;
+    font-size: 12px;
+}
+
+
+
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
